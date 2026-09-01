@@ -32,3 +32,6 @@ Modularize Project
     ```
 9. Add a output-block to 'subnet\outputs.tf' that outputs the whole subnet object and adjust reference to subnet in 'asw_instance' resource in 'main.tf'
 10. Execute `terraform init` to initialize the new module
+11. Repeat steps 5-10 for webserver module
+12. Adjust reference in 'outputs.tf'
+13. Execute `terraform init` again to initialize webserver module
