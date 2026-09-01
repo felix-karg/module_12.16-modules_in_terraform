@@ -30,3 +30,5 @@ Modularize Project
         default_route_table_id = aws_vpc.myapp-vpc.default_route_table_id
     }
     ```
+9. Add a output-block to 'subnet\outputs.tf' that outputs the whole subnet object and adjust reference to subnet in 'asw_instance' resource in 'main.tf'
+10. Execute `terraform init` to initialize the new module

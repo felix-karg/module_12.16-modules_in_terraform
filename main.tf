@@ -69,7 +69,7 @@ resource "aws_key_pair" "ssh-key" {
 resource "aws_instance" "myapp-server" {
   ami = data.aws_ami.latest-amazon-linux-image.id
   instance_type = var.instance_type
-  subnet_id = aws_subnet.myapp-subnet-1.id
+  subnet_id = module.myapp-subnet.subnet.id
   vpc_security_group_ids = [aws_default_security_group.default-sg.id]
   availability_zone = var.avail_zone
   associate_public_ip_address = true
