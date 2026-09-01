@@ -12,4 +12,4 @@ Modularize Project
 - Divide Terraform resources into reusable modules
 
 ## Implementation steps:
-
+1. Add file 'outputs.tf' and move all output configurations from 'main.tf' to this new file
