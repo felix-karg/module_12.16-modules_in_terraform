@@ -13,3 +13,4 @@ Modularize Project
 
 ## Implementation steps:
 1. Add file 'outputs.tf' and move all output configurations from 'main.tf' to this new file
+2. Add file 'variables.tf' and move all variable definitions from 'main.tf' there
